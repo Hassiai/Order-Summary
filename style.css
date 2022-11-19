@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0 auto;
+    background: url(pattern-background-desktop.svg) no-repeat;
+    object-fit: cover;
+    background-color: hsl(225, 100%, 94%);
+
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1rem;
+}
+
+.container {
+
+    width: 25rem;
+}
+
+
+.col_img {
+    background: url(illustration-hero.svg) no-repeat;
+    background-size: contain;
+    height: 12.2rem;
+    border-radius: 10px 10px 0 0;
+}
+
+.col_txt {
+    background: #fff;
+    padding: 1em 3em;
+    border-radius: 0 0 10px 10px;
+
+}
+
+.center {
+    text-align: center;
+}
+
+#heading {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+#fco {
+    line-height: 1.8;
+}
+
+.cont {
+    background-color: hsl(225, 100%, 98%);
+    padding: 0.2em 1em;
+    display: flex;
+    align-items: center;
+    border-radius: 0.5em;
+    line-height: 0.7;
+}
+
+
+
+#yr {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+
+
+.col+.col {
+    margin-left: 1em;
+}
+
+.push-right {
+    margin-right: auto;
+}
+
+.btn {
+    margin-top: 1em;
+    padding: 0.7em 5.2em;
+    text-decoration: none;
+    background-color: hsl(245, 75%, 52%);
+    color: #fff;
+    border-radius: 0.5em;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+
+    box-shadow: 0 1em 0.5em hsla(245, 75%, 52%, 0.2);
+}
+
+.center-link {
+    text-decoration: none;
+    color: hsl(226, 15%, 68%);
+    font-weight: 900;
+}
+
+.col p,
+.con p {
+    color: hsl(224, 11%, 53%);
+    font-weight: 500;
+}
+
+.btn:hover {
+    opacity: 0.5;
+
+}
+
+.center-link:hover,
+.center-link:focus {
+    color: hsl(223, 47%, 23%);
+}
+
+#cont_link:hover {
+    text-decoration: none;
+    color: hsl(245, 75%, 52%);
+    opacity: 0.5;
+}
+
+@media (max-width: 500px) {
+    body {
+        background: url(pattern-background-mobile.svg) no-repeat;
+        object-fit: cover;
+        background-color: hsl(225, 100%, 94%);
+    }
+
+    .container {
+        width: 20rem;
+    }
+
+    .col_img {
+        height: 9.8rem;
+    }
+
+    .col_txt {
+        padding: 1.5em;
+    }
+
+    .col_img+.col_txt {
+        margin-left: 0;
+    }
+
+    .cont {
+        padding: 0.2em 0.5em;
+    }
+
+    .btn {
+        padding: 1em 4em;
+    }
+
+    #fco {
+        line-height: 1.7;
+    }
+}
